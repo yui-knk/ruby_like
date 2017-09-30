@@ -104,6 +104,7 @@ module Evaluator
             v = evaluate0(f.body)
           end
 
+          set_last_value(v)
           v
         else
           raise "Unknown function: #{f_name}."
